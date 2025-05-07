@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Send SOS</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0" />
+</head>
+<body>
+  <!-- Decorative Background Icons -->
+  <span class="safety-icon material-symbols-rounded">shield_person</span>
+  <span class="safety-icon material-symbols-rounded">health_and_safety</span>
+  <span class="safety-icon material-symbols-rounded">security</span>
+
+  <div class="container">
+    <div class="card-header">
+      <div class="header-icon">
+        <span class="material-symbols-rounded">emergency</span>
+      </div>
+      <h1>SOS Alert</h1>
+    </div>
+    <p class="instructions">Press the button to send your current location as an emergency alert.</p>
+    <button class="sos-btn" onclick="sendSOS()">
+      <span class="material-symbols-rounded btn-icon">emergency</span>
+      Send SOS Alert
+    </button>
+    <p id="sosStatus" class="status-message"></p>
+    <a href="index.html" class="back-link">
+      <span class="material-symbols-rounded">arrow_back</span>
+      Back to Home
+    </a>
+  </div>
+  
+  <div class="bottom-nav">
+    <a href="index.html">
+      <span class="material-symbols-rounded nav-icon">home</span>
+      <span>Home</span>
+    </a>
+    <a href="sos.html" class="active">
+      <span class="material-symbols-rounded nav-icon">emergency</span>
+      <span>SOS</span>
+    </a>
+    <a href="fake-call.html">
+      <span class="material-symbols-rounded nav-icon">call</span>
+      <span>Call</span>
+    </a>
+    <a href="helpline.html">
+      <span class="material-symbols-rounded nav-icon">contacts</span>
+      <span>Help</span>
+    </a>
+    <a href="tips.html">
+      <span class="material-symbols-rounded nav-icon">tips_and_updates</span>
+      <span>Tips</span>
+    </a>
+  </div>
+  
+  <script src="app.js"></script>
+</body>
+</html>
